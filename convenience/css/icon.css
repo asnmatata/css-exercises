@@ -1,0 +1,17 @@
+.icon{
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 10px auto;
+    background:url(../icons/img.png)  no-repeat;
+    background-size: 192px 24px;
+}
+
+.icon-袜子{background-position:0 0;}
+.icon-手套{background-position:-24px 0;}
+.icon-摇铃{background-position:-48px 0;}
+.icon-碗{background-position:-72px 0;}
+.icon-毛巾{background-position:-96px 0;}
+.icon-抽纸{background-position:-120px 0;}
+.icon-勺子{background-position:-144px 0;}
+.icon-上衣{background-position:-168px 0;}
