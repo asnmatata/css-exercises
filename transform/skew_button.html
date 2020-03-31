@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>缩放图集案例</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #34495e;
+        }
+
+        main {
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main a {
+            position: relative;
+            height: 55px;
+            color: #ecf0f1;
+            font-size: 1.6em;
+            text-decoration: none;
+            border: 3px solid #c0392b;
+            border-radius: 5px;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .btn::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 100%;
+            background: #e74c3c;
+            transform: skew(45deg);
+            z-index: -1;
+            transition: .3s;
+        }
+        
+        .btn:hover::after {
+            width: 200%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <a href="" class="btn">azsuna</a>
+    </main>
+</body>
+</html>
